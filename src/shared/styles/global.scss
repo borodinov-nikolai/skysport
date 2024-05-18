@@ -1,0 +1,47 @@
+@import "./reset";
+@import "./mixins/breakpoints";
+@import "./variables/theme_variables";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
+* {
+     font-family: "Montserrat", sans-serif;
+
+}
+
+body {
+     font-family: "Montserrat", sans-serif;
+    background: var(--background-color);
+    input {
+        color: rgba(78, 78, 78, 1);
+    }
+}
+
+
+
+main {
+    min-height: calc(100svh - 91px);
+    padding-bottom: 40px;
+}
+
+.container {
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+@include breakpoint(xl) {
+    main {
+    min-height: calc(100vh - 178px);
+    padding-bottom: 80px;
+}
+    .container {
+        padding: 0 40px;
+    }
+
+}
+
+
+

@@ -1,0 +1,49 @@
+@import '../../../shared/styles/mixins/breakpoints';
+
+
+.root {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    background: white;
+}
+
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    font-weight: 600;
+}
+
+.logo {
+    padding: 1px 0;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    font-weight: 800;
+}
+.navList {
+    display: none;
+    gap: 40px; 
+    font-size: 14px;
+}
+
+.phone {
+    display: none;
+    font-size: 18px;
+}
+
+@include breakpoint(lg) {
+
+
+    .navList {
+        display: flex;
+    }
+
+    .phone {
+        display: block;
+    }
+}
