@@ -1,0 +1,79 @@
+@import '../../../../shared/styles/mixins/breakpoints';
+
+
+
+.mainBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: url('./../../../../../public/images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    min-width: 320px;
+}
+
+
+.hero {
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
+    gap: 54px;
+    h1 {
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+   
+    }
+    
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        font-weight: 500;
+    }
+}
+
+.test {
+    height: 100vh;
+    width: 100%;
+    background: white;
+}
+
+
+@include breakpoint(md) {
+
+    .title {
+
+        h1 {
+            font-size: 74px;
+           max-width: 500px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+}
+
+
+@include breakpoint(lg) {
+
+    .title {
+        h1 {
+            font-size: 104px;
+            max-width: 1000px;
+        }
+
+  
+    }
+}

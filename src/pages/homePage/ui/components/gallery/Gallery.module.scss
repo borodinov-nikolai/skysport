@@ -1,0 +1,125 @@
+@import '../../../../../shared/styles/mixins/breakpoints';
+
+
+.root {
+    padding: 60px 0;
+    background: white;
+
+}
+
+
+.swiper {
+    width: 100%;
+    position: relative !important;
+}
+
+.slide {
+    width: 400px;
+    text-align: center;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.navBtn {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgb(232, 232, 232);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+
+        height: 12px;
+        width: auto;
+    }
+}
+
+.prevBtn {
+ position: absolute;
+ top: 50%;
+ left: 5px;
+ z-index: 1;
+ translate: 0% -50%;
+}
+
+.nextBtn {
+    position: absolute;
+ top: 50%;
+ right: 5px;
+ z-index: 1;
+ translate: 0% -50%;
+}
+
+.mask {
+    display: none;
+}
+
+
+@include breakpoint(md) {
+
+    .navBtn {
+        width: 40px;
+        height: 40px;
+        svg {
+            height: 18px;
+        }
+    }
+      .prevBtn {
+        left: 20%;
+      }
+      .nextBtn {
+        right: 20%;
+      }
+     
+      .mask {
+        display: block;
+        width: 20%;
+        height: 100%;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.623);
+        z-index: 2 ;
+      }
+
+      .leftMask {
+        left: 0;
+        top: 0;
+      }
+
+      .rightMask {
+        top: 0;
+        right: 0;
+      }
+}
+
+
+@include breakpoint(lg) {
+     
+     .prevBtn {
+        left: 22%;
+     }
+     .nextBtn {
+        right: 22%;
+      }
+
+      .mask {
+        width: 22%;
+      }
+}
+
+@include breakpoint(xl) {
+     
+     .prevBtn {
+        left: 23%;
+     }
+     .nextBtn {
+        right: 23%;
+      }
+      .mask {
+        width: 23%;
+      }
+}

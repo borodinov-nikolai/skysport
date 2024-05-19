@@ -4,7 +4,7 @@ import cs from 'classnames'
 
 export const Header = () => {
   return (
-    <div className={styles.root} >
+    <header className={styles.root} >
         <div className={cs(styles.inner, 'container')} >
             <div className={styles.logo} > <Link to='/' >Скай-Спорт</Link> </div>
             <nav>
@@ -16,6 +16,6 @@ export const Header = () => {
             </nav>
             <div className={styles.phone} > <Link to={'tel:+74951201177'} >{'+7(495)120-11-77'}</Link> </div>
         </div> 
-    </div>
+    </header>
   )
 }
