@@ -42,20 +42,18 @@
     }
 }
 
-.test {
-    height: 100vh;
-    width: 100%;
-    background: white;
-}
 
+.desktopServices {
+    display: none;
+}
 
 @include breakpoint(md) {
 
-    .title {
+    .hero {
 
         h1 {
             font-size: 74px;
-           max-width: 500px;
+    
         }
 
         p {
@@ -68,12 +66,18 @@
 
 @include breakpoint(lg) {
 
-    .title {
+    .hero {
         h1 {
             font-size: 104px;
-            max-width: 1000px;
+            
         }
+    }
 
-  
+    .mobileServices {
+        display: none;
+    }
+
+    .desktopServices {
+        display: block;
     }
 }

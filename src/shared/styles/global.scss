@@ -29,6 +29,7 @@ main {
 
 .container {
     padding: 0 16px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -37,7 +38,7 @@ main {
     min-height: calc(100vh - 60px);
 }
     .container {
-        padding: 0 40px;
+        padding: 0;
     }
 
 }

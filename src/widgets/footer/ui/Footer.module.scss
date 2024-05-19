@@ -4,7 +4,12 @@
 
 .root {
     width: 100%;
-    background: black;
+    background: var(--footer-background);
+
+}
+
+
+.inner {
     display: flex;
     justify-content: flex-end;
 }

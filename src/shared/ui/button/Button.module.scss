@@ -1,0 +1,19 @@
+.root {
+    cursor: pointer;
+    user-select: none;
+    background: var(--button-background);
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    white-space: nowrap;
+    width: 140px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: background 0.2s linear, border-color 0.2s linear;
+    &:hover {
+        background: var(--button-background-hover);
+        border: 1px solid black;
+    }
+}

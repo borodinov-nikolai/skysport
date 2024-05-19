@@ -1,5 +1,8 @@
 import About from '../components/about'
+import DesktopServices from '../components/desktopServices/desktopServices'
 import Gallery from '../components/gallery'
+import MobileServices from '../components/mobileServices'
+import Team from '../components/team'
 import styles from './HomePage.module.scss'
 
 
@@ -22,9 +25,14 @@ export const HomePage = () => {
       <section className={styles.about} >
         <About/>
       </section>
-      <section>
-
+      <section className={styles.services} >
+      <div className={styles.mobileServices} > <MobileServices/> </div>
+      <div className={styles.desktopServices} > <DesktopServices/> </div>
       </section>
+      <section className={styles.team} >
+        <Team/>
+      </section>
+      
     </main>
   )
 }

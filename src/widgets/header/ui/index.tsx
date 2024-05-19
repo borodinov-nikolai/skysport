@@ -5,7 +5,7 @@ import cs from 'classnames'
 export const Header = () => {
   return (
     <header className={styles.root} >
-        <div className={cs(styles.inner, 'container')} >
+        <div className={styles.inner} >
             <div className={styles.logo} > <Link to='/' >Скай-Спорт</Link> </div>
             <nav>
                 <ul className={styles.navList}>
