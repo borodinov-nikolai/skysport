@@ -1,4 +1,5 @@
 import About from '../components/about'
+import Callback from '../components/callback'
 import DesktopServices from '../components/desktopServices/desktopServices'
 import Gallery from '../components/gallery'
 import MobileServices from '../components/mobileServices'
@@ -31,6 +32,9 @@ export const HomePage = () => {
       </section>
       <section className={styles.team} >
         <Team/>
+      </section>
+      <section className={styles.callback} >
+        <Callback/>
       </section>
       
     </main>

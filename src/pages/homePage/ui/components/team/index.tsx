@@ -7,7 +7,7 @@ const Team = () => {
     <div className={styles.root} >
         <div className="container">
             <h2 className={styles.title} >НАША КОМАНДА</h2>
-            <ul className={styles.cardHolder} >
+            <ul className={styles.cardsList} >
                     <li className={styles.card} >
                         <div className={styles.imageHolder} >
                             <img src="/images/DSC02505.jpg" alt="" />

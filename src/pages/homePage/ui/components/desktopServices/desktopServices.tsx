@@ -14,7 +14,7 @@ const DesktopServices = () => {
         </div>
         
           <ul
-          className={styles.cardsHolder} >
+          className={styles.cardsList} >
         
               <li className={styles.serviceCard} >
                   <div className={styles.imageHolder} ><img src={'/images/DSC02484.jpg'} /></div>

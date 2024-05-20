@@ -37,6 +37,14 @@
     display: none;
     font-size: 18px;
 }
+.burger {
+    cursor: pointer;
+    svg {
+        height: 30px;
+        width: auto;
+    }
+
+}
 
 @include breakpoint(lg) {
 
@@ -50,6 +58,10 @@
 
     .phone {
         display: block;
+    }
+
+    .burger {
+        display: none;
     }
 
 }

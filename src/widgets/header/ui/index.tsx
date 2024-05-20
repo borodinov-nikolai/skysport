@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import styles from './Header.module.scss'
-import cs from 'classnames'
+import { RxHamburgerMenu } from "react-icons/rx";
+
 
 export const Header = () => {
   return (
@@ -15,6 +16,7 @@ export const Header = () => {
                 </ul>
             </nav>
             <div className={styles.phone} > <Link to={'tel:+74951201177'} >{'+7(495)120-11-77'}</Link> </div>
+            <button className={styles.burger} ><RxHamburgerMenu /></button>
         </div> 
     </header>
   )

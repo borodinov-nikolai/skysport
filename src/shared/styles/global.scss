@@ -1,7 +1,18 @@
 @import "./reset";
 @import "./mixins/breakpoints";
 @import "./variables/theme_variables";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../../public/fonts/Montserrat-VariableFont_wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Russo One';
+    src: url('../../../public/fonts/RussoOne-Regular.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: normal;
+  }
 
 
 
@@ -9,16 +20,22 @@
 
 * {
      font-family: "Montserrat", sans-serif;
+     font-style: normal;
 
 }
 
 body {
      font-family: "Montserrat", sans-serif;
+     font-style: normal;
     background: var(--background-color);
     input {
         color: rgba(78, 78, 78, 1);
     }
     min-width: 320px;
+
+    h1, h2, h3 {
+        font-family: 'Russo One';
+    }
 }
 
 
