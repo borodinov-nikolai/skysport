@@ -18,11 +18,11 @@ export const Footer = () => {
                         </li>
                         <li>
                           <p>Позвонить нам:</p>
-                          <p><Link to='tel:+74951201177'>+7 (495) 120-11-77</Link></p>
+                          <p><Link to='tel:+79671592326'>+7 (967) 159 23 26</Link></p>
                         </li>
                         <li>
                           <p>Написать нам:</p>
-                          <p><Link to='mailto:op.korolev1@gmail.com' >op.korolev1@gmail.com</Link></p>
+                          <p><Link to='mailto:sky-sport@yandex.ru' >sky-sport@yandex.ru</Link></p>
                         </li>
                       </ul>
                       <ul className={styles.links} >
@@ -31,12 +31,7 @@ export const Footer = () => {
                         <li><Link to='#' >Публичная оферта</Link></li>
                       </ul>
                     </div>
-                    <div className={styles.map} style={{position:"relative",overflow:"hidden"}}><a href="https://yandex.ru/maps/org/komanda_pervykh/189352728331/?utm_medium=mapframe&utm_source=maps" style={{ color:"#eee", fontSize:"12px", position:"absolute", top:"0px"}}>Команда Первых</a><a href="https://yandex.ru/maps/20728/korolev/category/fitness_club/184107363/?utm_medium=mapframe&utm_source=maps" style={{color: "#eee", fontSize: "12px", position: "absolute", top:"14px"}}>Фитнес-клуб в Королёве</a><a href="https://yandex.ru/maps/20728/korolev/category/sports_club/184107297/?utm_medium=mapframe&utm_source=maps" style={{color:"#eee", fontSize: "12px", position:"absolute", top:"28px"}}>Спортивный клуб, секция в Королёве</a><iframe src="https://yandex.ru/map-widget/v1/org/komanda_pervykh/189352728331/?from=mapframe&ll=37.854250%2C55.956821&source=mapframe&utm_source=mapframe&z=11" width="560" height="400" frameBorder="1" allowFullScreen={true} style={{position:"relative"}}></iframe></div>
-                  </div>
-                  <div className={styles.info} >
-                    <p>2023 © ООО «ПЕРВЫЙ ФИТНЕС»</p>
-                    <p>ИНН 5018210079, ОГРН 1215000127550 , КПП 501801001</p>
-                    <p>141090, Московская Область, г.о. Королёв, г Королёв, мкр Юбилейный, ул Маяковского, дом 2</p>
+                    <div className={styles.map} style={{position:"relative",overflow:"hidden"}}><a href="https://yandex.ru/maps/20728/korolev/?utm_medium=mapframe&utm_source=maps" style={{ color:"#eee", fontSize:"12px", position:"absolute", top:"0px"}}>Королёв</a><a href="https://yandex.ru/maps/20728/korolev/house/ulitsa_mayakovskogo_2/Z04YfgNjQUMAQFtvfXVzeXpgZw==/?from=mapframe&ll=37.843867%2C55.928633&source=mapframe&utm_medium=mapframe&utm_source=maps&z=16.87" style={{color: "#eee", fontSize: "12px", position: "absolute", top:"14px"}}>Улица Маяковского, 2 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=37.843867%2C55.928633&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjkzMzg1NhKQAdCg0L7RgdGB0LjRjywg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsINCa0L7RgNC-0LvRkdCyLCDQvNC40LrRgNC-0YDQsNC50L7QvSDQrtCx0LjQu9C10LnQvdGL0LksINGD0LvQuNGG0LAg0JzQsNGP0LrQvtCy0YHQutC-0LPQviwgMiIKDR9gF0IV67ZfQg%2C%2C&source=mapframe&utm_source=mapframe&z=16.87" width="560" height="400" frameBorder="1" allowFullScreen={true} style={{position:"relative"}}></iframe></div>
                   </div>
                 </div>
            

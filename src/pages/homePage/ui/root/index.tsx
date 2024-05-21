@@ -1,3 +1,4 @@
+import { useRef } from 'react'
 import About from '../components/about'
 import Callback from '../components/callback'
 import DesktopServices from '../components/desktopServices/desktopServices'
@@ -9,6 +10,12 @@ import styles from './HomePage.module.scss'
 
 
 export const HomePage = () => {
+  const formRef = useRef<HTMLDivElement>(null)
+
+  const handleScrollToForm = ()=> {
+
+    formRef.current?.scrollIntoView({behavior: 'smooth', block: 'center'})
+  }
   return (
    <main className={styles.root}  >
       <div className={styles.mainBackground}></div>
@@ -27,14 +34,14 @@ export const HomePage = () => {
         <About/>
       </section>
       <section className={styles.services} >
-      <div className={styles.mobileServices} > <MobileServices/> </div>
-      <div className={styles.desktopServices} > <DesktopServices/> </div>
+      <div className={styles.mobileServices} > <MobileServices scrollTo={handleScrollToForm} /> </div>
+      <div className={styles.desktopServices} > <DesktopServices scrollTo={handleScrollToForm} /> </div>
       </section>
       <section className={styles.team} >
         <Team/>
       </section>
-      <section className={styles.callback} >
-        <Callback/>
+      <section  ref={formRef} className={styles.callback} >
+        <Callback />
       </section>
       
     </main>

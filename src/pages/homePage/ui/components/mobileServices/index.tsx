@@ -3,7 +3,7 @@ import styles from './MobileServices.module.scss'
 import { Swiper, SwiperSlide} from 'swiper/react'
 
 
-const MobileServices = () => {
+const MobileServices = ({scrollTo}: {scrollTo: ()=> void}) => {
   return (
     <div className={styles.root} >
           
@@ -30,7 +30,7 @@ const MobileServices = () => {
                             <li>- 2 часа в неделю - <span>8.000 ₽</span></li>
                             <li>- 3 часа в неделю - <span>12.000 ₽</span></li>
                         </ul>
-                        <div className={styles.orderBtn} ><Button>Записаться</Button></div>
+                        <div className={styles.orderBtn} ><Button onClick={scrollTo} >Записаться</Button></div>
                     </div>
                 </div>
             </SwiperSlide>
@@ -51,7 +51,7 @@ const MobileServices = () => {
                             <li>- 2 часа в неделю - <span>9.000 ₽</span></li>
                             <li>- Минни-группа(3-4 чел) - <span>4.500 ₽</span></li>
                         </ul>
-                        <div className={styles.orderBtn} ><Button>Записаться</Button></div>
+                        <div className={styles.orderBtn} ><Button onClick={scrollTo} >Записаться</Button></div>
                     </div>
                 </div>
             </SwiperSlide>
@@ -66,7 +66,7 @@ const MobileServices = () => {
                             <li>- 1 занятие - <span>2.200 ₽ + аренда корта</span></li>
                             <li>- сплит-тренировка (2 человека) - <span>2.500 ₽ + аренда корта</span></li>
                         </ul>
-                        <div className={styles.orderBtn} ><Button>Записаться</Button></div>
+                        <div className={styles.orderBtn} ><Button onClick={scrollTo} >Записаться</Button></div>
                     </div>
                 </div>
             </SwiperSlide>
@@ -78,7 +78,7 @@ const MobileServices = () => {
                       <p>Вы можете арендовать корт для самостоятельной игры. На корте может находиться до 4 человек одновременно.</p>
                         <p>Стоимость аренды корта: от 1.300₽ до 1800₽ за час.</p>
                         <p>При покупке персональных тренировок и сплит-тренировок стоимость аренды карта от 1.100₽ - 1.650 ₽</p>
-                        <div className={styles.orderBtn} ><Button>Забронировать</Button></div>
+                        <div className={styles.orderBtn} ><Button onClick={scrollTo} >Записаться</Button></div>
                     </div>
                 </div>
             </SwiperSlide>

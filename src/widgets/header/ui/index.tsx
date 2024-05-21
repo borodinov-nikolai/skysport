@@ -8,15 +8,9 @@ export const Header = () => {
     <header className={styles.root} >
         <div className={styles.inner} >
             <div className={styles.logo} > <Link to='/' >Скай-Спорт</Link> </div>
-            <nav>
-                <ul className={styles.navList}>
-                    <li><Link to='/' >Теннисный клуб</Link></li>
-                    <li><Link to='/' >Арендные помещения</Link></li>
-                    <li><Link to='/' >О нас</Link></li>
-                </ul>
-            </nav>
-            <div className={styles.phone} > <Link to={'tel:+74951201177'} >{'+7(495)120-11-77'}</Link> </div>
-            <button className={styles.burger} ><RxHamburgerMenu /></button>
+       
+            <div className={styles.phone} > <Link to={'tel:+79671592326'} >{'+7 (967) 159 23 26'}</Link> </div>
+           
         </div> 
     </header>
   )

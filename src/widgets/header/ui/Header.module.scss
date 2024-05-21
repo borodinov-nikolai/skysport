@@ -27,23 +27,18 @@
     border-bottom: 4px solid black;
     font-weight: 800;
 }
-.navList {
-    display: none;
-    gap: 40px; 
+
+
+.phone {
     font-size: 14px;
 }
 
-.phone {
-    display: none;
-    font-size: 18px;
-}
-.burger {
-    cursor: pointer;
-    svg {
-        height: 30px;
-        width: auto;
-    }
 
+
+@include breakpoint(sm) {
+    .phone {
+        font-size: 18px;
+    }
 }
 
 @include breakpoint(lg) {
@@ -52,16 +47,7 @@
         padding: 0 40px;
     }
 
-    .navList {
-        display: flex;
-    }
-
-    .phone {
-        display: block;
-    }
-
-    .burger {
-        display: none;
-    }
+ 
+  
 
 }
